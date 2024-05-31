@@ -15,7 +15,7 @@ public class ListarAnimaisServlet extends HttpServlet {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Trate exceções adequadamente.
+
         }
 
         request.setAttribute("animais", animais);
