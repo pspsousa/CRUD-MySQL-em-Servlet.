@@ -4,7 +4,6 @@ public class CriarAnimalServlet extends HttpServlet {
         String nome = request.getParameter("nome");
         String especie = request.getParameter("especie");
 
-        // Valide os dados recebidos (por exemplo, verifique se os campos não estão vazios).
 
         try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sos_animais", "seu_usuario", "sua_senha")) {
             String sql = "INSERT INTO animais (nome, especie) VALUES (?, ?)";
@@ -15,9 +14,8 @@ public class CriarAnimalServlet extends HttpServlet {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Trate exceções adequadamente.
         }
 
-        response.sendRedirect("listar-animais"); // Redirecione para a página de listagem.
+        response.sendRedirect("listar-animais"); 
     }
 }
