@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>CriarAnimalServlet</servlet-name>
+        <servlet-class>com.example.CriarAnimalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CriarAnimalServlet</servlet-name>
+        <url-pattern>/criar-animal</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>AtualizarAnimalServlet</servlet-name>
+        <servlet-class>com.example.AtualizarAnimalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AtualizarAnimalServlet</servlet-name>
+        <url-pattern>/Atualizar-animal</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>ExluirAnimalServlet</servlet-name>
+        <servlet-class>com.example.ExluirAnimalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExluirAnimalServlet</servlet-name>
+        <url-pattern>/Exluir-animal</url-pattern>
+    </servlet-mapping>
+  
+<servlet>
+        <servlet-name>ListarAnimalServlet</servlet-name>
+        <servlet-class>com.example.ListarAnimalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarAnimalServlet</servlet-name>
+        <url-pattern>/Listar-animal</url-pattern>
+    </servlet-mapping>
+</web-app>
